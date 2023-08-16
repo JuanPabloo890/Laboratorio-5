@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #ecf4fb;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.contenedor{
+    border-radius: 20px;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: repeat(2, 280px);
+    grid-template-columns: repeat(4, 240px);
+    grid-template-areas: "header1 header1 header2 late1"
+                        "footer1 footer2 footer2 late1";
+    place-content: center;
+}
+.item {
+    border-radius: 10px;
+    box-shadow: rgba(166, 165, 165, 0.35) 0px 5px 15px;
+    
+}
+
+
+.item-1 {
+    background-color:  #7742c9 ;
+    grid-area: header1;
+    position: relative;
+    padding: 20px;
+}
+
+.rounded-image-1 {
+    border: 2px solid #9768de;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+}
+
+.header1-content {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    padding-right: 10px;
+}
+
+.header-text h2 {
+    margin: 0;
+    color: white;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-left: 50px;
+    
+}
+
+.subtext {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.46);
+    font-size: 9px;
+    padding-left: 50px;
+}
+.item-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 63%;
+    width: 100%; 
+    height: 100%;
+    background: url(bg-pattern-quotation.svg) no-repeat;
+    
+}
+.typed-text {
+    margin: 10px 0;
+    color: white;
+    padding-top: 10px;
+    font-size:19px;
+    position: relative;
+}
+
+.small-text {
+    margin: 0;
+    font-size: 13px;
+    line-height : 20px;
+    color: white;
+    opacity: 0.5;
+    padding-right: 20px;
+}
+.small-text-container {
+    position: absolute;
+    bottom: 24px;
+    left: 20px;
+    z-index: 1;
+}
+
+
+.item-2{
+    background-color:  #7742c9 ;
+    grid-area: header1;
+    
+}
+
+
+.item-3 {
+    background-color: #4b546b ;
+    grid-area: header2;
+    position: relative;
+    padding: 25px;
+}
+
+.rounded-image-2 {
+    border: 2px solid #8892ac;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 30px;
+}
+
+.header1-content {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    padding-right: 10px;
+}
+
+.typed-text2 {
+    margin: 10px 0;
+    color: white;
+    padding-top: 10px;
+    font-size:19px;
+    position: relative;
+}
+
+.small-text {
+    margin: 0;
+    font-size: 13px;
+    line-height : 20px;
+    color: white;
+    opacity: 0.5;
+    padding-right: 25px;
+}
+.small-text-container2 {
+    position: absolute;
+    bottom: 24px;
+    left: 25px;
+    z-index: 1;
+}
+
+
+.item-4 {
+    background-color:  white ;
+    grid-area: late1;
+    position: relative;
+    padding: 20px;
+}
+
+.rounded-image-3 {
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+}
+
+
+.late1-text h2 {
+    margin: 0;
+    color: #1c242c;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-left: 50px;
+    
+}
+
+.subtext2 {
+    margin: 0;
+    color: #1c242c8e;
+    font-size: 9px;
+    padding-left: 50px;
+}
+
+.typed-text3 {
+    margin: 13px 0;
+    color: #1c242cd2;
+    padding-top: 10px;
+    font-size:19px;
+    position: relative;
+}
+
+.small-textl {
+    margin: 0;
+    font-size: 13px;
+    line-height : 19px;
+    color: #1c242c;
+    opacity: 0.7;
+    padding-right: 26px;
+}
+.small-text-container3 {
+    position: absolute;
+    bottom: 29px;
+    left: 22px;
+    z-index: 1;
+}
+
+.item-5{
+    background-color:  white ;
+    grid-area: late1;
+}
+
+.item-6 {
+    background-color:  white ;
+    grid-area: footer1;
+    position: relative;
+    padding: 20px;
+}
+.typed-text4 {
+    margin: 13px 0;
+    color: #1c242cd2;
+    padding-top: 10px;
+    font-size:22px;
+    position: relative;
+}
+
+
+
+.item-7 {
+    background-color: #1d252e ;
+    grid-area: footer2;
+    position: relative;
+    padding: 20px;
+}
+
+.typed-text5 {
+    margin: 12px 0;
+    color: white;
+    padding-top: 15px;
+    font-size:19px;
+    position: relative;
+}
+
+.small-text5 {
+    margin: 0;
+    font-size: 13px;
+    line-height : 20px;
+    color: white;
+    opacity: 0.5;
+    padding-right: 25px;
+}
+.small-text-container5 {
+    position: absolute;
+    bottom: 33px;
+    left: 20px;
+    z-index: 1;
+}
+
+.item-8{
+    background-color: #1c242c ;
+    grid-area: footer2;
+}
